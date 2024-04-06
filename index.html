@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/base.css">
-    <link rel="stylesheet" href="/styles/larger.css">
-    <title>Hunter Beeson - Home</title>
+    <title>Hunter Beeson - Personal Website</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
-
 <body>
     <header>
-        <div class="container">
-            <h1>Hunter Beeson</h1>
+        <div class="header-content">
+            <img class="profile-picture" src="images/avatar.jpeg" alt="Profile Picture">
+            <div class="header-text">
+                <h1>Hunter Beeson</h1>
+                <p>Welcome to my personal website</p>
+            </div>
         </div>
     </header>
 
-    <section class="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            
+    <section id="section1" class="parallax-section">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>Write a brief introduction about yourself here.</p>
+        </div>
+    </section>
+
+    <section id="section2" class="parallax-section">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <p>List your skills and expertise here.</p>
+        </div>
+    </section>
+
+    <section id="section3" class="parallax-section">
+        <div class="section-content">
+            <h2>Projects</h2>
             <div id="grid"></div>
-            
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Hunter Beeson.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Hunter Beeson</p>
         </div>
     </footer>
-    <script src="/scripts/home.js"></script>
+
+    <script src="scripts/getData.js"></script>
 </body>
 </html>

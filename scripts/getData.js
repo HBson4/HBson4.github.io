@@ -1,7 +1,7 @@
-const url = './data/data.json';
+const projects = './data/projects.json';
 
 async function getProjects() {
-    const response = await fetch(url);
+    const response = await fetch(projects);
     const data = await response.json();
     displayProjects(data);
 }
