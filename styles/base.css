@@ -16,6 +16,8 @@ body {
     min-height: 100vh;
 }
 
+/* --------------- Header --------------- */
+
 header, footer {
     background-color: #333;
     color: #fff;
@@ -41,8 +43,10 @@ header, footer {
     font-size: 1.5em;
 }
 
+/* --------------- Parallax Sections --------------- */
+
 .parallax-section {
-    min-height: 100vh;
+    min-height: 80vh;
     overflow: hidden;
     background-attachment: fixed;
     background-position: center;
@@ -75,8 +79,21 @@ header, footer {
     /* background-color: #AED6F1; */
 }
 
+.section-content {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    flex: 1;
+}
 
-/* ---------- PROJECTS ---------- */
+.section-content h2 {
+    font-size: 2em;
+}
+
+
+/* --------------- Project Cards --------------- */
+
 #grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -89,31 +106,25 @@ header, footer {
 
 .project-card:hover .overlay {
     background: var(--project-card-overlay-hover);
+    border: 4px solid white;
+    transform: scale(1.1);
 }
 
 .project-card .overlay {
     width: 380px;
     margin: 0 auto;
     padding: 20px 0;
+    border: 4px solid transparent;
     background: var(--project-card-overlay);
     display: flex;
     justify-content: center;
     color: #fff;
     font-weight: bold;
     font-size: 2em;
+    transition: all 0.5s ease;
 }
 
-.section-content {
-    text-align: center;
-    max-width: 90%;
-    margin: 0 auto;
-    font-size: 1.5em;
-    flex: 1;
-}
-
-.section-content h2 {
-    font-size: 2em;
-}
+/* --------------- Footer --------------- */
 
 footer {
     background-color: #333;

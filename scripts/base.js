@@ -14,7 +14,7 @@ $(document).ready(function() {
         if (contentHeight > sectionHeight) {
           $(this).css('min-height', contentHeight + 'px'); // Adjust min-height
         } else {
-          $(this).css('min-height', '100vh'); // Reset to 100vh if no overflow
+          $(this).css('min-height', '80vh'); // Reset to 100vh if no overflow
         }
       });
     }
