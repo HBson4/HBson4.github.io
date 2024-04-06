@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+}
+
+.profile-picture {
+    width: 120px; /* Adjust the size as needed */
+    height: 120px;
+    border-radius: 50%; /* Creates a circular shape */
+    margin-right: 20px; /* Adjust the spacing between the picture and text */
+}
+
+.header-text {
+    color: white;
+    font-size: 1.5em;
+}
+
+.parallax-section {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+#section1 {
+    background-image: url('https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png');
+    /* background-color: #FFCCCC; */
+}
+
+#section2 {
+    background-image: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
+    /* background-color: #B0E57C; */
+}
+
+#section3 {
+    background-image: url('https://coolbackgrounds.io/images/backgrounds/blue/blue-trianglify-8e4a0501.jpg');
+    /* background-color: #AED6F1; */
+}
+
+.section-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.5em;
+    /* background-color: lightgrey; */
+    /* padding: 0 1.2em; */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
