@@ -98,6 +98,11 @@ header, footer {
     font-size: 2em;
 }
 
+.text {
+    width: 90%;
+    margin: 0 auto;
+}
+
 
 /* --------------- Project Cards --------------- */
 

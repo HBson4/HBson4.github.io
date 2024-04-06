@@ -8,6 +8,10 @@
         transform: scale(1.1);
     }
 
+    .text {
+        width: 60%;
+    }
+
     .project-card:hover .overlay {
         box-shadow: 4px 4px 8px white;
         transform: scale(1.1);
