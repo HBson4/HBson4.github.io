@@ -1,14 +1,10 @@
 :root {
-    --primary-bg-color: #f2f2f2; /* Light gray */
-    --text-color: #333;
-    --header-bg-color: #3498db; /* Dodger Blue */
-    --header-text-color: #fff;
-    --nav-bg-color: #2980b9; /* Darker Dodger Blue */
-    --nav-link-color: #fff;
     --project-card-overlay: rgba(0, 0, 0, 0.5);
     --project-card-overlay-hover: rgba(0, 0, 0, 0.7);
-    --footer-bg-color: #3498db; /* Dodger Blue */
-    --footer-text-color: #fff;
+}
+
+html {
+    height: 100%;
 }
 
 body {
@@ -30,14 +26,14 @@ header, footer {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center;
 }
 
 .profile-picture {
-    width: 120px; /* Adjust the size as needed */
+    width: 120px;
     height: 120px;
-    border-radius: 50%; /* Creates a circular shape */
-    margin-right: 20px; /* Adjust the spacing between the picture and text */
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .header-text {
@@ -46,7 +42,8 @@ header, footer {
 }
 
 .parallax-section {
-    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,6 +52,12 @@ header, footer {
     align-items: center;
     justify-content: center;
     color: #333;
+}
+
+.break {
+    background-color: #333;
+    height: 20px;
+    width: 100%;
 }
 
 #section1 {
@@ -115,6 +118,6 @@ header, footer {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px;
     text-align: center;
+    font-size: 1.2em;
 }
