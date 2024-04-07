@@ -67,6 +67,8 @@ header, footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,6 +80,7 @@ header, footer {
     height: 20px;
     width: 100%;
 }
+
 
 #sectionBG1 {
     background-image: url('/images/bg1-small.png');
