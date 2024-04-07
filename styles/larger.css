@@ -45,6 +45,11 @@
         flex-direction: row;
     }
 
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
     .project-card:hover .overlay {
         transform: scale(1.1);
     }
