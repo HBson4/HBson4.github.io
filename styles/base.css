@@ -172,15 +172,15 @@ html.dark {
 }
 
 main.dark #sectionBG1 {
-    background-image: url('/images/purple.png');
+    background-image: url('/images/purple-small.png');
 }
 
 main.dark #sectionBG2 {
-    background-image: url('/images/green.png');
+    background-image: url('/images/green-small.png');
 }
 
 main.dark #sectionBG3 {
-    background-image: url('/images/red.jpg');
+    background-image: url('/images/red-small.jpg');
 }
 
 main.dark .parallax-section .section-content .picture{

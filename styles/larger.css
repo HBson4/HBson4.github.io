@@ -14,6 +14,18 @@
         padding: 10px 25px 10px 15px;
     }
 
+    main.dark #sectionBG1 {
+        background-image: url('/images/purple.png');
+    }
+    
+    main.dark #sectionBG2 {
+        background-image: url('/images/green.png');
+    }
+    
+    main.dark #sectionBG3 {
+        background-image: url('/images/red.jpg');
+    }
+
     #about .text {
         width: 80%;
         text-align: left;
