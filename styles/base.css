@@ -67,8 +67,6 @@ header, footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,6 +79,11 @@ header, footer {
     width: 100%;
 }
 
+#sectionBG1, #sectionBG2, #sectionBG3 {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
 
 #sectionBG1 {
     background-image: url('/images/bg1-small.png');
