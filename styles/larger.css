@@ -8,7 +8,13 @@
         transform: scale(1.1);
     } */
 
-    .text {
+    #dark-mode-toggle {
+        top: 5%;
+        right: -1%;
+        padding: 10px 25px 10px 15px;
+    }
+
+    #about .text {
         width: 80%;
         text-align: left;
     }
@@ -17,6 +23,11 @@
         width: 400px;
         height: auto;
         margin-left: 50px;
+        transition: all 0.5s ease;
+    }
+
+    .picture:hover {
+        transform: scale(1.05);
     }
 
     .section-content h2 {

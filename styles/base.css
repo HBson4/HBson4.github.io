@@ -90,10 +90,10 @@ main #sectionBG1 {
 
 #dark-mode-toggle {
     position: fixed;
-    top: 5%;
+    top: 1%;
     right: -1%;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 10px 25px 10px 15px;
+    padding: 10px 15px 10px 15px;
     border-radius: 5px;
 }
 
@@ -170,29 +170,29 @@ main.dark #sectionBG3 {
     background-image: url('/images/red.jpg');
 }
 
-main.dark .parallax-section .section-content .picture {
-    box-shadow: 4px 4px 8px grey;
+main.dark .parallax-section .section-content .picture{
+    border: 5px solid #7851CF;
 }
 
 main.dark .parallax-section .section-content .heading, 
 main.dark .parallax-section .section-content .text {
-    color: whitesmoke;
+    color: lightgrey;
 }
 
 main.dark .parallax-section .section-content #grid .project-card .overlay {
     background: rgba(255, 255, 255, .5);
     color: #333;
-    box-shadow: 4px 4px 8px grey;
 }
 
 main.dark .parallax-section .section-content #grid .project-card:hover .overlay {
     border: 4px solid red;
+    background: rgba(255, 255, 255, .7);
 }
 
 /* ----------------------------------------- */
 
-#about, #projects {
-    max-width: 90%;
+#about, #projects, #change-me {
+    width: 90%;
     margin: 0 auto;
     font-size: 1.5em;
 }
@@ -201,6 +201,12 @@ main.dark .parallax-section .section-content #grid .project-card:hover .overlay 
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+
+#change-me {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -265,4 +271,5 @@ footer {
     color: #fff;
     text-align: center;
     font-size: 1.2em;
+    padding-top: 20px;
 }
