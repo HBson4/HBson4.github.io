@@ -9,7 +9,18 @@
     }
 
     .text {
-        width: 60%;
+        width: 80%;
+        text-align: left;
+    }
+
+    .picture {
+        width: 400px;
+        height: auto;
+    }
+    
+    #about {
+        flex-direction: row;
+        padding-top: 0;
     }
 
     .project-card:hover .overlay {

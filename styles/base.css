@@ -47,6 +47,14 @@ header, footer {
 
 /* --------------- Parallax Sections --------------- */
 
+.picture {
+    width: 50%;
+    height: auto;
+    border-radius: 10%;
+    border: 5px solid white;
+    box-shadow: 4px 4px 8px black;
+}
+
 .parallax-section {
     min-height: 80vh;
     overflow: hidden;
@@ -81,13 +89,31 @@ header, footer {
     /* background-color: #AED6F1; */
 }
 
-.section-content {
-    text-align: center;
+#about, #projects {
     max-width: 90%;
     margin: 0 auto;
     font-size: 1.5em;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#about .heading {
+    text-align: center;
+}
+
+#projects {
+    text-align: center;
     flex: 1;
     /* background-color: rgba(255, 255, 255, 0.3); */
+}
+
+.section-content:first-child {
+    padding-top: 50px;
 }
 
 .section-content:last-child {
