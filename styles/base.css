@@ -63,7 +63,7 @@ header, footer {
 .parallax-section {
     min-height: 100vh;
     overflow: hidden;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,12 +77,6 @@ header, footer {
     background-color: #444;
     height: 20px;
     width: 100%;
-}
-
-#sectionBG1, #sectionBG2, #sectionBG3 {
-    height: 100%;
-    width: auto;
-    overflow: hidden;
 }
 
 #sectionBG1 {
