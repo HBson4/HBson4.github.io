@@ -32,6 +32,13 @@
 
     .section-content h2 {
         margin-top: 0;
+        font-size: 2em;
+    }
+
+    .text {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.2em;
     }
     
     #about {

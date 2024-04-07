@@ -5,6 +5,7 @@
 
 html {
     height: 100%;
+    background-color: #444;
 }
 
 body {
@@ -16,7 +17,9 @@ body {
     min-height: 100vh;
 }
 
-/* --------------- Header --------------- */
+/* ----------------------------------------- */
+/* HEADING */
+/* ----------------------------------------- */
 
 header, footer {
     background-color: #444;
@@ -45,7 +48,9 @@ header, footer {
     font-size: 1.5em;
 }
 
-/* --------------- Parallax Sections --------------- */
+/* ----------------------------------------- */
+/* PARALLAX SECTIONS */
+/* ----------------------------------------- */
 
 .picture {
     width: 50%;
@@ -86,7 +91,9 @@ main #sectionBG1 {
     background-image: url('https://coolbackgrounds.io/images/backgrounds/blue/blue-trianglify-8e4a0501.jpg');
 }
 
-/* --------------- Dark Mode Toggle --------------- */
+/* ----------------------------------------- */
+/* DARK MODE TOGGLE */
+/* ----------------------------------------- */
 
 #dark-mode-toggle {
     position: fixed;
@@ -156,7 +163,13 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-/* --------------- Dark Mode --------------- */
+/* ----------------------------------------- */
+/* DARK MODE STYLES */
+/* ----------------------------------------- */
+
+html.dark {
+    background-color: #222;
+}
 
 main.dark #sectionBG1 {
     background-image: url('/images/purple.png');
@@ -196,6 +209,8 @@ main.dark .break{
 }
 
 /* ----------------------------------------- */
+/* SECTION STYLES */
+/* ----------------------------------------- */
 
 #about, #projects, #change-me {
     width: 90%;
@@ -231,16 +246,18 @@ main.dark .break{
 }
 
 .section-content h2 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .text {
     width: 90%;
     margin: 0 auto;
+    font-size: .8em;
 }
 
-
-/* --------------- Project Cards --------------- */
+/* ----------------------------------------- */
+/* PROJECT CARDS */
+/* ----------------------------------------- */
 
 #grid {
     display: grid;
@@ -270,7 +287,9 @@ main.dark .break{
     font-size: 1.5em;
 }
 
-/* --------------- Footer --------------- */
+/* ----------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------- */
 
 footer {
     color: #fff;
