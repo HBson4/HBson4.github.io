@@ -21,7 +21,7 @@ body {
 header, footer {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -31,14 +31,14 @@ header, footer {
     justify-content: center;
 }
 
-.profile-picture {
+/* .profile-picture {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-right: 20px;
     border: 4px solid white;
     box-shadow: 2px 2px 7px black;
-}
+} */
 
 .header-text {
     color: white;
@@ -56,7 +56,7 @@ header, footer {
 }
 
 .parallax-section {
-    min-height: 80vh;
+    min-height: 100vh;
     overflow: hidden;
     background-attachment: fixed;
     background-position: center;
@@ -74,20 +74,122 @@ header, footer {
     width: 100%;
 }
 
-#section1 {
+main #sectionBG1 {
     background-image: url('https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png');
-    /* background-color: #FFCCCC; */
 }
 
-#section2 {
+#sectionBG2 {
     background-image: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
-    /* background-color: #B0E57C; */
 }
 
-#section3 {
+#sectionBG3 {
     background-image: url('https://coolbackgrounds.io/images/backgrounds/blue/blue-trianglify-8e4a0501.jpg');
-    /* background-color: #AED6F1; */
 }
+
+/* --------------- Dark Mode Toggle --------------- */
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 5%;
+    right: -1%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 25px 10px 15px;
+    border-radius: 5px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: black;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px black;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* --------------- Dark Mode --------------- */
+
+main.dark #sectionBG1 {
+    background-image: url('/images/purple.png');
+}
+
+main.dark #sectionBG2 {
+    background-image: url('/images/green.png');
+}
+
+main.dark #sectionBG3 {
+    background-image: url('/images/red.jpg');
+}
+
+main.dark .parallax-section .section-content .picture {
+    box-shadow: 4px 4px 8px grey;
+}
+
+main.dark .parallax-section .section-content .heading, 
+main.dark .parallax-section .section-content .text {
+    color: whitesmoke;
+}
+
+main.dark .parallax-section .section-content #grid .project-card .overlay {
+    background: rgba(255, 255, 255, .5);
+    color: #333;
+    box-shadow: 4px 4px 8px grey;
+}
+
+main.dark .parallax-section .section-content #grid .project-card:hover .overlay {
+    border: 4px solid red;
+}
+
+/* ----------------------------------------- */
 
 #about, #projects {
     max-width: 90%;
@@ -112,7 +214,7 @@ header, footer {
 }
 
 .section-content {
-    background-color: rgba(255, 255, 255, 0.3);
+    /* background-color: rgba(255, 255, 255, 0.2); */
     padding: 50px 0;
 }
 
@@ -140,7 +242,7 @@ header, footer {
 
 .project-card:hover .overlay {
     background: var(--project-card-overlay-hover);
-    border: 4px solid white;
+    border: 4px solid #2196F3;
 }
 
 .project-card .overlay {

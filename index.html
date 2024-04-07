@@ -19,7 +19,13 @@
         </div>
     </header>
     <main>
-        <section id="section1" class="parallax-section">
+        <div id="dark-mode-toggle">
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <section id="sectionBG1" class="parallax-section">
             <div id="about" class="section-content">
                 <img class="picture" src="images/me.webp" alt="Picture of Me">
                 <div>
@@ -33,16 +39,16 @@
             </div>
         </section>
         <!-- <div class="break"></div>
-        <section id="section2" class="parallax-section">
+        <section id="sectionBG2" class="parallax-section">
             <div class="section-content">
-                <h2>Heading</h2>
+                <h2 class="heading">Heading</h2>
                 <p>Content goes here.</p>
             </div>
         </section> -->
         <div class="break"></div>
-        <section id="section3" class="parallax-section">
+        <section id="sectionBG3" class="parallax-section">
             <div id="projects" class="section-content">
-                <h2>Projects</h2>
+                <h2 class="heading">Projects</h2>
                 <div id="grid"></div>
             </div>
         </section>
@@ -53,6 +59,7 @@
 
     <script src="scripts/getData.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/darkMode.js"></script>
     <script src="scripts/base.js"></script>
 </body>
 </html>
