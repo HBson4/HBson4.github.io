@@ -14,10 +14,6 @@
         padding: 10px 25px 10px 15px;
     }
 
-    .parallax-section {
-        background-attachment: fixed;
-    }
-
     #sectionBG1 {
         background-image: url('/images/bg1.png');
     }
