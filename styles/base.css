@@ -79,16 +79,16 @@ header, footer {
     width: 100%;
 }
 
-main #sectionBG1 {
-    background-image: url('https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png');
+#sectionBG1 {
+    background-image: url('/images/bg1-small.png');
 }
 
 #sectionBG2 {
-    background-image: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
+    background-image: url('/images/bg2-small.png');
 }
 
 #sectionBG3 {
-    background-image: url('https://coolbackgrounds.io/images/backgrounds/blue/blue-trianglify-8e4a0501.jpg');
+    background-image: url('/images/bg3-small.jpeg');
 }
 
 /* ----------------------------------------- */
